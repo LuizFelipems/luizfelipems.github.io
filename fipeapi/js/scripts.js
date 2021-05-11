@@ -6,7 +6,7 @@ $(document).ready(function() {
 	var anoVeiculo = 0;
 
 	/* Montando select MARCA */
-	$.getJSON("http://fipeapi.appspot.com/api/1/" + tipo + "/marcas" + ".json",
+	$.getJSON("https://fipeapi.appspot.com/api/1/" + tipo + "/marcas" + ".json",
 		function(json) {
 			$.each(json, function(i, valo) {
 				 $("#marc_veiculo").append(('<option value="' + this.id + '">' + this.fipe_name + '</option>'));
@@ -19,7 +19,7 @@ $(document).ready(function() {
 		idMarca = $("#marc_veiculo").val(); // capturo o novo id selecionado
 		
 		/* Montando select MODELO */
-		$.getJSON("http://fipeapi.appspot.com/api/1/" + tipo + "/veiculos/" + idMarca + ".json", 
+		$.getJSON("https://fipeapi.appspot.com/api/1/" + tipo + "/veiculos/" + idMarca + ".json", 
 			//{param1: 'value1'}, 
 			function(json) {
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
 		anoModVeiculo = $("#mod_veiculo").val(); // capturo o novo id selecionado
 
 		/* Montando select Ano Mod Veiculo */
-		$.getJSON("http://fipeapi.appspot.com/api/1/" + tipo + "/veiculo/" + idMarca + "/" + anoModVeiculo + ".json",
+		$.getJSON("https://fipeapi.appspot.com/api/1/" + tipo + "/veiculo/" + idMarca + "/" + anoModVeiculo + ".json",
 		function(json) {
 			$.each(json, function(i, valo) {
 				 $("#ano_mod_veiculo").append(('<option value="' + this.id + '">' + this.fipe_codigo + '</option>'));
@@ -51,7 +51,7 @@ $(document).ready(function() {
 			//console.log(anoVeiculo);
 
 
-			$.getJSON("http://fipeapi.appspot.com/api/1/" + tipo + "/veiculo/" + idMarca + "/" + anoModVeiculo + "/" + anoVeiculo + ".json", 
+			$.getJSON("https://fipeapi.appspot.com/api/1/" + tipo + "/veiculo/" + idMarca + "/" + anoModVeiculo + "/" + anoVeiculo + ".json", 
 			//{param1: 'value1'}, 
 			function(json) {
 					$("#resposta").append(('<li>' + json.name + " | " 
