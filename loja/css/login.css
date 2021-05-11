@@ -1,0 +1,106 @@
+/* Layout da index*/
+body {
+    
+    background-color: white;
+    position: relative;
+    width: 80%;
+    margin: -2% 10%;
+    /* border: 1px solid #000; */
+}
+
+#titulo {
+    position: relative;
+    margin: auto;
+    /* border: 1px solid #000;  */
+}
+
+#titulo h1 {
+    padding: 1% 0 0;
+    text-align: center;
+    font-size: 30pt;
+}
+
+#conteudo {
+    position: relative;
+    /* border: 1px solid red; */
+    padding: 12% 0;
+}
+
+#rodape {
+    position: relative;
+    bottom: 0;
+    /*border: 1px solid #000;*/
+}
+
+#rodape p {
+    text-align: center;
+}
+
+/* Entradas do form login */
+#tituloForm {
+    margin: auto;
+    width: 35%;
+    height: 30%;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+}
+
+#tituloForm h1{
+    text-align: center;
+    font-size: 20pt;
+    font-family: sans-serif;
+    color: #8080ff;
+    margin: 1%;
+}
+
+#form {
+    text-align: center;
+    position: relative;
+    border: 1px solid #8080ff;
+    padding: 4% 2%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#botaoLogin {
+    background-color: #8080ff;
+    color: white;
+    font-size: 13pt;
+    border: 1px solid #8080ff;
+    padding: 4% 6%;
+    margin-left: 70%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#botaoLogin:hover {
+    background-color: white;
+    color: #8080ff;
+    font-size: 13pt;
+    border: 1px solid #8080ff;
+    padding: 4% 6%;
+    margin-left: 70%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/* Botões do form login */
+#usuario {
+    width: 80%;
+    padding: 3% 5%;
+    text-align: left; 
+    font-size: 13pt;
+    border-radius: 4px;
+}
+
+#senha {
+    width: 80%;
+    padding: 3% 5%;
+    text-align: left;
+    font-size: 13pt;
+    border-radius: 4px;
+}
+
+.inputs {
+    margin: 4% 1%;
+}

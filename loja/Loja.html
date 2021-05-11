@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt">
+	<head>
+        <title>Loja</title>
+	    <link rel="shortcut icon" href="img/sacola-compras.ico" />
+		<link rel="stylesheet" type="text/css" href="css/loja.css" />
+
+		<script src="js/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+		<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+		<script src=""></script>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">			
+	</head>
+	<body>
+	
+	<div id="carrinho" class="titulo">
+		<ul  class="menu">
+			<li class="titLoja"><p>Sulanca</p></li>
+			<li class="MenuDrop">
+				<a href="#" class="car"><img src="img/carrinho.png" alt="" class="imgCar" /></a>
+				<div class="MenuDropSub">
+				    <h3 class="titCar">Carrinho</h3>
+				    <p id="exibir1"></p>
+					<p id="exibir2"></p>
+					<p id="exibir3"></p>
+					<p id="exibir4"></p>
+                    <p id="exibir5"></p>
+                    <h3 class="totalCar" id="totalC">Total</h3>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="catalogo" class="vitrine">
+		<h1 class="tituloVitrine">Relógios - as melhores marcas</h1>
+
+		<div id="box1" class="boxImage">
+			<h2>CITZEN</h2>
+			<img src="img/relogio1.jpg" alt="play" class="imgForm" />
+			<button id="btn1" class="comprBtn" onclick="comprarProd(1, 'exibir1', 'del1', 1000);">Comprar</button>
+			<p>Relógio Citzen prata Masculino</p>
+			<p>R$ 1.000</p>
+		</div>
+
+		<div id="box2" class="boxImage">
+			<h2>FOSSIL</h2>
+			<img src="img/relogio2.jpg" alt="play" class="imgForm" />
+			<button id="btn1" class="comprBtn" onclick="comprarProd(2, 'exibir2', 'del2', 1000);">Comprar</button>
+			<p id="ai">Relógio Fossil marrom Masculino</p>
+			<p>R$ 1.000</p>
+		</div>
+
+		<div id="box3" class="boxImage">
+			<h2>KSBROS</h2>
+			<img src="img/relogio3.jpg" alt="play" class="imgForm" />
+			<button id="btn1" class="comprBtn" onclick="comprarProd(3, 'exibir3', 'del3', 1000);">Comprar</button>
+			<p>Relógio Fossil cinza Masculino</p>
+			<p>R$ 1.000</p>
+		</div>
+
+		<div id="box4" class="boxImage">
+			<h2>KSBROS</h2>
+			<img src="img/relogio4.jpg" alt="play" class="imgForm" />
+			<button id="btn1" class="comprBtn" onclick="comprarProd(4, 'exibir4', 'del4', 1000);">Comprar</button>
+			<p>Relógio Fossil marron Feminino</p>
+			<p>R$ 1.000</p>
+		</div>
+		
+		<div id="box4" class="boxImage">
+			<h2>KSBROZ</h2>
+			<img src="img/relogio5.jpg" alt="play" class="imgForm" />
+			<button id="btn1" class="comprBtn" onclick="comprarProd(5, 'exibir5', 'del5', 1000);">Comprar</button>
+			<p>Relógio Fossil azul  Masculino</p>
+			<p>R$ 1.000</p>
+		</div>
+		
+		
+		<div class="limpar"></div>
+
+	</div>
+
+	<div class="rodape">
+            <p>Trabalho RIA, Loja Virtual - todos os direitos reservados &copy;. Alunos: Luiz Felipe, Phelipe, Jonatan.</p>
+    </div>
+    
+    <script type="text/JavaScript" src="js/loja.js"></script>
+	</body>
+</html>

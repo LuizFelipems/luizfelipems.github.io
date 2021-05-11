@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Login Sulanca</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+        <div id="titulo">
+           <h1>Sulanca</h1>
+        </div>
+
+        <div id="conteudo">
+          
+           <div id="tituloForm" >
+              <h1>Login</h1>
+               <form id="form" action="">
+                    <div class="inputs"><img src="img/iconUser.jpg" alt=""><input type="text" id="usuario" class="campo_login" placeholder="Usuário" maxlength="11" onblur="return validaCPF(this.value)" required onfocus="mudarCor(this);"/></div>
+                    <div class="inputs"><img src="img/iconCadeado.png" alt=""><input type="password" id="senha" class="campo_login" placeholder="Senha" required onfocus="mudarCor(this);" /></div>
+                    <button type="button" value="submit" id="botaoLogin" onclick="loginCPFvalido()">Login</button>
+               </form>
+           </div>
+           
+        </div>
+
+        <div id="rodape">
+            <p>Trabalho RIA, Loja Virtual - todos os direitos reservados &copy;. Alunos: Luiz Felipe, Phelipe, Jonatan.</p>
+        </div>
+</body>
+</html>
